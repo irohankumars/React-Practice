@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: auto;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  flex: 1 1 200px; /* minimum width 200px, flexible growth */
+}
+
+
+
+
+.pokemon {
+  list-style-type: none;
+  background-color: #f0f0f0;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
