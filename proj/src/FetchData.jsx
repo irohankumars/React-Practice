@@ -4,12 +4,18 @@ export default function Apod() {
   const [apodData, setApodData] = useState(null);
 
   useEffect(function () {
-    async function fetchAPOD() {
+   try{ async function fetchAPOD() {
       const response = await fetch(
        "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
       );
-      const data = await response.json();
+      if(!response){
+        throw new Error("Error Fetching");
+      }
+
       setApodData(data);
+    }}catch(err){
+      console.log(err)
+
     }
     fetchAPOD();
   }, []);

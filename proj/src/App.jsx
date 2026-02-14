@@ -12,6 +12,6 @@ import Apod from "./FetchData.jsx"
 import Pokedex from "./Pokedex"
 
 export default function App(){
-  return <Pokedex/>
+  return ( <div> <ToDo/> <Timer/><Sideeffect/><Counter/></div> )
 
 }
